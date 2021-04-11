@@ -39,7 +39,7 @@ function getStr(str, start, end) {
 const execute = async function() {
     var randnumber = between(1, 99999);
     //var randnumber = ('7');
-    var nomemail = 'Gustta';
+    var nomemail = 'GusttaCDL';
     var jar = req.jar()
     var fingerprint = '782696642591719455.G1ZEIdn7QWEI3CHMkXItl6XT6tc';
     var mail = `aikatmp+${nomemail}${randnumber}@gmail.com`;
