@@ -190,7 +190,7 @@ const execute = async function() {
         body: `{"token":"${tokenCap}","captcha_key":"${captchaResponse2}"}`
     })).body)
     console.log({ criado: true, token: token, email: mail, nomeconta: nomemail, status: `Email Confirmado`})
-    fs.appendFile('confirmadasx.txt', `Conta Criada - Nome: ${nomemail} - Email: ${mail} - Token: "${token}" - Status: Email Confirmado! #Gustta `+ '\n', () => {})
+    fs.appendFile('confirmadas.txt', `Conta Criada - Nome: ${nomemail} - Email: ${mail} - Token: "${token}" - Status: Email Confirmado! #Gustta `+ '\n', () => {})
     let resultado = 'confirmado';
     console.log("CONTA FINALIZADA!");
     return { status: true };
@@ -219,20 +219,7 @@ async function start(){
 
 start();
 app.listen(porta, () => {
-
-    console.log(`╭━━━╮╱╱╱╱╱╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱╭━━━╮╭╮╱╱╱╱╱╭╮╱╱`)
-    console.log(`┃╭━╮┃╱╱╱╱╱╱╱╱╱╭╯╰╮┃┃╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱╱┃╭━╮┃┃┃╱╱╱╱╱┃┃╱╱`)
-    console.log(`┃╰━━╮╭╮╱╭╮╭━━╮╰╮╭╯┃╰━╮╭━━╮╰╮╭╯╭╮╭━━╮┃┃╱╰╯┃┃╱╭╮╭╮┃╰━╮`)
-    console.log(`╰━━╮┃┃┃╱┃┃┃╭╮┃╱┃┃╱┃╭╮┃┃┃━┫╱┃┃╱┣┫┃╭━╯┃┃╱╭╮┃┃╱┃┃┃┃┃╭╮┃`)
-    console.log(`┃╰━╯┃┃╰━╯┃┃┃┃┃╱┃╰╮┃┃┃┃┃┃━┫╱┃╰╮┃┃┃╰━╮┃╰━╯┃┃╰╮┃╰╯┃┃╰╯┃`)
-    console.log(`╰━━━╯╰━╮╭╯╰╯╰╯╱╰━╯╰╯╰╯╰━━╯╱╰━╯╰╯╰━━╯╰━━━╯╰━╯╰━━╯╰━━╯`)
-    console.log(`╱╱╱╱╱╭━╯┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱`)
-    console.log(`╱╱╱╱╱╰━━╯╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱`)
-
-
-
-    console.log(`Cadastrador iniciado, coded by: Gustta!`)
-
+    console.log(`Palafita Lab's`)
 })
 
 
